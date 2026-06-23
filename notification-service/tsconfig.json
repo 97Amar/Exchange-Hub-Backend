@@ -3,23 +3,20 @@
     "target": "es2020",
     "module": "NodeNext",
     "noImplicitAny": false,
-    "lib": [
-      "es2021"
-    ],
-    "strict": true,
+    "lib": ["es2021"],
+    "strict": false,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "moduleResolution": "NodeNext",
+    "outDir": "dist"
   },
   "include": [
-    "notification-service/index.ts",
-    "notification-service/src/**/*",
-    "shared/**/*"
+    "index.ts",
+    "src/**/*",
+    "../shared/**/*"
   ],
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"]
 }

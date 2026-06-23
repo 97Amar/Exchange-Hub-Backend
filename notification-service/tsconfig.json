@@ -13,6 +13,9 @@
     "outDir": "dist",
     "rootDir": "../"
   },
+  "references": [
+    { "path": "../shared" }
+  ],
   "include": [
     "index.ts",
     "src/**/*",

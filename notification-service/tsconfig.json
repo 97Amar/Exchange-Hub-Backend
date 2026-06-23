@@ -15,9 +15,9 @@
     "moduleResolution": "NodeNext",
   },
   "include": [
-    "index.ts",
-    "src/**/*",
-    "../shared/**/*"
+    "notification-service/index.ts",
+    "notification-service/src/**/*",
+    "shared/**/*"
   ],
   "exclude": [
     "node_modules"

@@ -11,7 +11,7 @@ import swaggerSpec from "./src/config/swagger";
 import { startServer } from "./src/grpc/server/server";
 import { createServer } from "http";
 import { initExchangeStreams } from "./src/socket/server";
-import { ensureTopicsExist } from "../shared/utils/kafka-config";
+import { ensureTopicsExist } from "./src/shared/utils/kafka-config";
 
 const app: Application = express();
 

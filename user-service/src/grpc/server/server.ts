@@ -21,7 +21,7 @@ const grpcPort = process.env.GRPC_PORT || "5001";
 const URL = `${grpcIp}:${grpcPort}`;
 
 // 2. Load our "Service Contract" (The .proto file)
-const PROTO_PATH = path.resolve(__dirname, "..", "..", "..", "..", "shared", "proto", "mail.proto");
+const PROTO_PATH = path.resolve(__dirname, "..", "proto", "mail.proto");
 
 // Options for loading the proto file correctly
 const protoOptions = {

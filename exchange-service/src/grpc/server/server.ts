@@ -7,7 +7,7 @@ const grpcIp = "0.0.0.0";
 const grpcPort = process.env.GRPC_PORT || "53002";
 const URL = `${grpcIp}:${grpcPort}`;
 
-const PROTO_PATH = path.resolve(__dirname, "..", "..", "..", "..", "shared", "proto", "bybit.proto");
+const PROTO_PATH = path.resolve(__dirname, "..", "..", "shared", "proto", "bybit.proto");
 
 const protoOptions = {
   keepCase: true,

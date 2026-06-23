@@ -3,7 +3,7 @@ import { verifyToken } from "../utils/jwt";
 import Api400Error from "../exception/api400Error";
 import { ERROR_MESSAGES } from "../../constants/messages";
 import { RESPONSE_CODES } from "../../constants/statusCode";
-import { redisClient, connectRedis } from "../../../shared/utils/redis";
+import { redisClient, connectRedis } from "../shared/utils/redis";
 
 export interface AuthRequest extends Request {
   user?: any;

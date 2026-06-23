@@ -1,5 +1,5 @@
 import { generateToken } from "../src/utils/jwt";
-import { redisClient, connectRedis } from "../../shared/utils/redis";
+import { redisClient, connectRedis } from "../src/shared/utils/redis";
 import jwt from "jsonwebtoken";
 
 const testAuth = async () => {
@@ -14,7 +14,7 @@ const testAuth = async () => {
 
   await connectRedis();
   const storedToken = await redisClient.get(`auth:${userId}`);
-  
+
   if (storedToken === token) {
     console.log("✅ Token successfully stored in Redis.");
   } else {
@@ -34,7 +34,7 @@ const testAuth = async () => {
   console.log("3. Testing revocation (deleting from Redis)...");
   await redisClient.del(`auth:${userId}`);
   const deletedToken = await redisClient.get(`auth:${userId}`);
-  
+
   if (!deletedToken) {
     console.log("✅ Token successfully revoked from Redis.");
   } else {

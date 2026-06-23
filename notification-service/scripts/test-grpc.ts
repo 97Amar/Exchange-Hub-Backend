@@ -9,7 +9,7 @@ import { NOTIFICATION_TYPE } from "../src/utils/constants";
  * Run this with: npx ts-node scripts/test-grpc.ts
  */
 
-const PROTO_PATH = path.resolve(__dirname, "../src/grpc/proto/mail.proto");
+const PROTO_PATH = path.resolve(__dirname, "../src/shared/proto/mail.proto");
 const GRPC_HOST = process.env.NOTIFICATION_SERVICE_GRPC_HOST;
 const SERVER_URL = GRPC_HOST;
 

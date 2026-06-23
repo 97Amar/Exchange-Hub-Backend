@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from "express";
 import { verifyToken } from "../utils/jwt";
-import { redisClient, connectRedis } from "../../../shared/utils/redis";
+import { redisClient, connectRedis } from "../shared/utils/redis";
 
 export interface AuthRequest extends Request {
   user?: any;

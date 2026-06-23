@@ -1,6 +1,6 @@
 import { Kafka, SASLOptions, Partitioners } from 'kafkajs';
 import dotenv from 'dotenv';
-import { getKafkaConfig } from '../../../shared/utils/kafka-config';
+import { getKafkaConfig } from '../shared/utils/kafka-config';
 dotenv.config();
 
 const kafka = new Kafka({

@@ -1,7 +1,7 @@
 import { Kafka, SASLOptions } from 'kafkajs';
 import { Server } from 'socket.io';
 import { handleBinanceUserDataEvent } from '../events/binance.events';
-import { getKafkaConfig } from '../../../shared/utils/kafka-config';
+import { getKafkaConfig } from '../shared/utils/kafka-config';
 import dotenv from 'dotenv';
 dotenv.config();
 

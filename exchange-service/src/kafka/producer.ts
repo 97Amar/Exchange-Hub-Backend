@@ -1,5 +1,5 @@
 import { Kafka, SASLOptions, Partitioners } from 'kafkajs';
-import { getKafkaConfig } from '../../../shared/utils/kafka-config';
+import { getKafkaConfig } from '../shared/utils/kafka-config';
 import dotenv from 'dotenv';
 dotenv.config();
 

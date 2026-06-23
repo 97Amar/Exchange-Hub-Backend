@@ -11,7 +11,7 @@ import {
   initBinancePublicStream,
   initBinancePrivateStream,
 } from "./binanceServer";
-import { getKafkaConfig } from "../../../shared/utils/kafka-config";
+import { getKafkaConfig } from "../shared/utils/kafka-config";
 import dotenv from 'dotenv';
 dotenv.config();
 

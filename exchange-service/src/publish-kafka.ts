@@ -1,5 +1,5 @@
 import { Kafka, SASLOptions } from "kafkajs";
-import { getKafkaConfig, ensureTopicsExist } from "../../shared/utils/kafka-config";
+import { getKafkaConfig, ensureTopicsExist } from "./shared/utils/kafka-config";
 import dotenv from 'dotenv';
 dotenv.config();
 

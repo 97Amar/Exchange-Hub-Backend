@@ -5,7 +5,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 import { initKafkaConsumer } from "./kafka/consumer";
 import { producer, initKafkaProducer } from "./kafka/producer";
-import { ensureTopicsExist } from "../../shared/utils/kafka-config";
+import { ensureTopicsExist } from "./shared/utils/kafka-config";
 
 
 dotenv.config();

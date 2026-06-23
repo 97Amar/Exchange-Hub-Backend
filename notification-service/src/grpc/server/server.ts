@@ -17,7 +17,7 @@ const grpcPort = process.env.GRPC_PORT;   // The standard port for our gRPC serv
 const URL = `${grpcHost}:${grpcPort}`;
 
 // 2. Load the Service "Contract" (.proto file)
-const PROTO_PATH = path.resolve(__dirname, "..", "..", "..", "..", "shared", "proto", "mail.proto");
+const PROTO_PATH = path.resolve(__dirname, "..", "..", "shared", "proto", "mail.proto");
 const packageDefinition = protoLoader.loadSync(PROTO_PATH, {
   keepCase: true,
   longs: String,

@@ -1,5 +1,5 @@
 const { Kafka } = require('kafkajs');
-const { getKafkaConfig } = require('../shared/utils/kafka-config');
+const { getKafkaConfig } = require('./src/shared/utils/kafka-config');
 const dotenv = require('dotenv');
 dotenv.config();
 

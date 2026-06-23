@@ -12,7 +12,7 @@ import path from "path";
  */
 
 // 1. Path to the proto file
-const PROTO_PATH = path.resolve(__dirname, "../proto/mail.proto");
+const PROTO_PATH = path.resolve(__dirname, "../../shared/proto/mail.proto");
 
 // 2. Load the proto file
 const packageDefinition = protoLoader.loadSync(PROTO_PATH, {

@@ -1,5 +1,5 @@
 import jwt from "jsonwebtoken";
-import { redisClient, connectRedis } from "../../../shared/utils/redis";
+import { redisClient, connectRedis } from "../shared/utils/redis";
 
 const JWT_SECRET = process.env.JWT_SECRET_KEY || "testingsecretkey";
 const JWT_ISSUER = process.env.JWT_ISSUER || "exchange";

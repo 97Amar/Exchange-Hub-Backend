@@ -11,7 +11,8 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "moduleResolution": "NodeNext"
+    "moduleResolution": "NodeNext",
+    "ignoreDeprecations": "6.0"
   },
   "include": [
     "index.ts",

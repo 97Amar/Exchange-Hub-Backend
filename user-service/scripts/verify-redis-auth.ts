@@ -1,5 +1,5 @@
 import { generateToken } from "../src/utils/jwt";
-import { redisClient, connectRedis } from "../src/utils/redis";
+import { redisClient, connectRedis } from "../../shared/utils/redis";
 import jwt from "jsonwebtoken";
 
 const testAuth = async () => {

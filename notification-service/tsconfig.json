@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "es2020",
     "module": "NodeNext",
-    "noImplicitAny": false,
+    "moduleResolution": "NodeNext",
     "lib": ["es2021"],
     "strict": false,
     "esModuleInterop": true,
@@ -10,13 +10,13 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "moduleResolution": "NodeNext",
-    "outDir": "dist"
+    "outDir": "dist",
+    "rootDir": "../"
   },
   "include": [
     "index.ts",
     "src/**/*",
     "../shared/**/*"
   ],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "dist"]
 }

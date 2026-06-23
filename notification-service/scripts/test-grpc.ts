@@ -10,7 +10,9 @@ import { NOTIFICATION_TYPE } from "../src/utils/constants";
  */
 
 const PROTO_PATH = path.resolve(__dirname, "../src/grpc/proto/mail.proto");
-const SERVER_URL = "localhost:50051";
+const GRPC_HOST = process.env.NOTIFICATION_SERVICE_GRPC_HOST;
+const SERVER_URL = GRPC_HOST;
+
 
 // 1. Load the proto file
 const packageDefinition = protoLoader.loadSync(PROTO_PATH, {

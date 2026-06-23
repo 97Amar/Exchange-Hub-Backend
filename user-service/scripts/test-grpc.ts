@@ -1,4 +1,4 @@
-import { sendMail } from "../src/grpc /client/mail-client";
+import { sendMail } from "../src/grpc/client/mail-client";
 
 /**
  * gRPC TEST SCRIPT

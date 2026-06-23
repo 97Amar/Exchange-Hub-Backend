@@ -27,7 +27,7 @@ const notificationProto: any = grpc.loadPackageDefinition(packageDefinition).not
 
 // 3. Current host. Since this is for the service itself, 
 // 'localhost' is usually fine for testing.
-const GRPC_HOST = process.env.NOTIFICATION_SERVICE_GRPC_HOST || "localhost:50051";
+const GRPC_HOST = process.env.NOTIFICATION_SERVICE_GRPC_HOST;
 
 /**
  * The Client Instance.

@@ -8,6 +8,7 @@
     "development": "ts-node src/index.ts",
     "devlopment": "ts-node src/index.ts",
     "dev": "ts-node src/index.ts",
+    "build": "tsc",
     "start": "ts-node src/index.ts"
   },
   "license": "ISC",

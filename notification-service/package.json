@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "ts-node index.ts",
+    "build": "tsc",
     "development": "npx sequelize db:create && npx sequelize db:migrate && ts-node index.ts"
   },
   "keywords": [],

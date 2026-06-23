@@ -1,1 +1,26 @@
-﻿{"compilerOptions":{"target":"es2020","module":"commonjs","moduleResolution":"node","lib":["es2021"],"strict":false,"esModuleInterop":true,"allowSyntheticDefaultImports":true,"resolveJsonModule":true,"skipLibCheck":true,"forceConsistentCasingInFileNames":true,"outDir":"dist","rootDir":"./"},"include":["**/*"],"exclude":["node_modules","dist"]}
+{
+    "compilerOptions": {
+        "target": "es2020",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "lib": [
+            "es2021"
+        ],
+        "strict": false,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "resolveJsonModule": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "outDir": "dist",
+        "rootDir": "./"
+    },
+    "include": [
+        "index.ts",
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
+}

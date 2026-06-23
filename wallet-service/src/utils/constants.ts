@@ -1,0 +1,5 @@
+export const NOTIFICATION_TYPE = {
+  EMAIL: "EMAIL",
+  SMS: "SMS",
+  WHATSAPP: "WHATSAPP",
+};

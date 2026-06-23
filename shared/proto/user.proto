@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package user;
+
+/**
+ * USER SERVICE DEFINITION
+ * 
+ * This contract defines the methods available on the user-service 
+ * for other services to call.
+ */
+service UserService {
+  // Method to update a user's balance
+  rpc UpdateBalance (UpdateBalanceRequest) returns (UpdateBalanceResponse);
+}
+
+// Data needed to update a balance
+message UpdateBalanceRequest {
+  string userId = 1;
+  double amount = 2;
+  string type = 3; // e.g., "DEBIT", "CREDIT"
+}
+
+// Data returned after the update
+message UpdateBalanceResponse {
+  string status = 1; // e.g., "SUCCESS", "FAILED"
+  string message = 2;
+  double newBalance = 3;
+}

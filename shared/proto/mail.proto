@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+package notification;
+
+service NotificationService {
+  rpc SendNotification (NotificationRequest) returns (NotificationResponse);
+  rpc SendMail (MailRequest) returns (NotificationResponse);
+  rpc VerifyOtp (VerifyOtpRequest) returns (NotificationResponse);
+}
+
+message VerifyOtpRequest {
+  string email = 1;
+  string otp = 2;
+  string service = 3;
+}
+
+message NotificationRequest {
+  string content = 1;
+  string type = 2; // e.g., "SMS", "EMAIL"
+  string service = 3; // e.g., "OTP_SERVICE"
+  string username = 4;
+}
+
+message MailRequest {
+  string to = 1;
+  string subject = 2;
+  string body = 3;
+  string type = 4; // e.g., "OTP"
+  string username = 5;
+  string service = 6;
+}
+
+message NotificationResponse {
+  string status = 1; // e.g., "SUCCESS", "FAILED"
+  string message = 2;
+}

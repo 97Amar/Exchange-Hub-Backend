@@ -1,0 +1,18 @@
+{
+    "name": "@exchange-hub/shared",
+    "version": "1.0.0",
+    "description": "Shared utilities, proto files and types for the exchange-hub monorepo",
+    "private": true,
+    "devDependencies": {
+        "@types/jsonwebtoken": "^9.0.0",
+        "@types/node": "^20.19.43",
+        "@types/winston": "*",
+        "jsonwebtoken": "^9.0.0",
+        "typescript": "^5.0.0",
+        "winston": "^3.0.0"
+    },
+    "dependencies": {
+        "kafkajs": "^2.2.4",
+        "redis": "^6.0.0"
+    }
+}

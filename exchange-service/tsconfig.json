@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "NodeNext",
+    "lib": [
+      "es2021"
+    ],
+    "strict": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "NodeNext"
+  },
+  "include": [
+    "index.ts",
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

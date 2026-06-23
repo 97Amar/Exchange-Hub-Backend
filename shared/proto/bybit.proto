@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package bybit;
+
+service BybitService {
+  rpc GetOrderStatus (OrderStatusRequest) returns (OrderStatusResponse);
+}
+
+message OrderStatusRequest {
+  string order_id = 1;
+}
+
+message OrderStatusResponse {
+  string status = 1;
+}

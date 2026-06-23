@@ -1,0 +1,19 @@
+nohup: ignoring input
+
+> socket-service@1.0.0 development
+> ts-node src/index.ts
+
+◇ injected env (3) from .env // tip: ◈ encrypted .env [www.dotenvx.com]
+◇ injected env (0) from .env // tip: ⌁ auth for agents [www.vestauth.com]
+{"level":"WARN","timestamp":"2026-05-04T11:31:55.941Z","logger":"kafkajs","message":"KafkaJS v2.0.0 switched default partitioner. To retain the same partitioning behavior as in previous versions, create the producer with the option \"createPartitioner: Partitioners.LegacyPartitioner\". See the migration guide at https://kafka.js.org/docs/migration-guide-v2.0.0#producer-new-default-partitioner for details. Silence this warning by setting the environment variable \"KAFKAJS_NO_PARTITIONER_WARNING=1\""}
+◇ injected env (0) from .env // tip: ⌘ enable debugging { debug: true }
+(node:596310) TimeoutNegativeWarning: -1777894315970 is a negative number.
+Timeout duration was set to 1.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✅ Kafka Producer connected in Socket Service
+{"level":"INFO","timestamp":"2026-05-04T11:31:55.983Z","logger":"kafkajs","message":"[Consumer] Starting","groupId":"socket-service-group"}
+{"level":"INFO","timestamp":"2026-05-04T11:31:59.012Z","logger":"kafkajs","message":"[ConsumerGroup] Consumer has joined the group","groupId":"socket-service-group","memberId":"socket-service-consumer-d276d09a-8bb6-4f3e-8b34-856b9f9596bf","leaderId":"socket-service-consumer-d276d09a-8bb6-4f3e-8b34-856b9f9596bf","isLeader":true,"memberAssignment":{"EXCHANGE_MARKET_DATA":[0],"EXCHANGE_USER_DATA":[0]},"groupProtocol":"RoundRobinAssigner","duration":3028}
+✅ Kafka Consumer connected in Socket Service
+✅ Kafka Services Connected Successfully
+🚀 Socket Service running on port 4004
+🔌 Client connected: Mcw09Q0vDbirZFBeAAAB

@@ -9,7 +9,8 @@
     "development": "npx sequelize db:create && npx sequelize db:migrate && ts-node index.ts",
     "test:grpc": "ts-node scripts/test-grpc.ts",
     "build": "tsc",
-    "prestart": "npm run build"
+    "prestart": "npm run build",
+    "postinstall": "cd ../shared && npm install"
   },
   "keywords": [],
   "author": "",

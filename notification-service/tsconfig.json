@@ -2,6 +2,7 @@
   "compilerOptions": {
     "target": "es2020",
     "module": "NodeNext",
+    "noImplicitAny": false,
     "lib": [
       "es2021"
     ],
@@ -15,7 +16,8 @@
   },
   "include": [
     "index.ts",
-    "src/**/*"
+    "src/**/*",
+    "../shared/**/*"
   ],
   "exclude": [
     "node_modules"

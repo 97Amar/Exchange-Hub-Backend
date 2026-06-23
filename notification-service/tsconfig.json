@@ -1,8 +1,8 @@
 {
     "compilerOptions": {
         "target": "es2020",
-        "module": "commonjs",
-        "moduleResolution": "node",
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
         "lib": [
             "es2021"
         ],
@@ -13,8 +13,7 @@
         "skipLibCheck": true,
         "forceConsistentCasingInFileNames": true,
         "outDir": "dist",
-        "rootDir": "./",
-        "ignoreDeprecations": "6.0"
+        "rootDir": "./"
     },
     "include": [
         "index.ts",

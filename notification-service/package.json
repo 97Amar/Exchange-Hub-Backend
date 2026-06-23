@@ -5,9 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node index.ts",
+    "start": "node dist/index.js",
     "development": "npx sequelize db:create && npx sequelize db:migrate && ts-node index.ts",
-    "test:grpc": "ts-node scripts/test-grpc.ts"
+    "test:grpc": "ts-node scripts/test-grpc.ts",
+    "build": "tsc",
+    "prestart": "npm run build"
   },
   "keywords": [],
   "author": "",

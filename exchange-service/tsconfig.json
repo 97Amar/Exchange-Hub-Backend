@@ -10,11 +10,14 @@
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
     "outDir": "dist",
-    "rootDir": "./"
+    "rootDir": "./",
+    "allowJs": true
   },
   "include": [
     "index.ts",
-    "src/**/*"
+    "src/**/*",
+    "models/**/*",
+    "config/**/*"
   ],
   "exclude": [
     "node_modules",

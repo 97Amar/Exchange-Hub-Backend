@@ -13,7 +13,7 @@ import * as MailModule from "../../modules/otp/otp.controller";
 
 // 1. Where should the server run?
 const grpcHost = "0.0.0.0"; // Listen on all network interfaces
-const grpcPort = process.env.GRPC_PORT || "50051";   // The standard port for our gRPC service
+const grpcPort = process.env.GRPC_PORT;   // The standard port for our gRPC service
 const URL = `${grpcHost}:${grpcPort}`;
 
 // 2. Load the Service "Contract" (.proto file)

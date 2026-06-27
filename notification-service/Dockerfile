@@ -1,27 +1,25 @@
-# Base stage
 FROM node:20-alpine AS builder
 WORKDIR /app
 
-# Sabse pehle root ki dependency copies taaki caching achi rahe
 COPY package*.json ./
-# COPY shared ./shared
 
-# Specific service ki dependency copy
+COPY shared/ ./shared/
+
 COPY backend/notification-service/package*.json ./backend/notification-service/
+
 RUN npm install
 
-# Ab saara code copy karein
 COPY . .
 
-# Service build karein
-RUN cd backend/user-service && npm run build
+RUN cd backend/notification-service && npm run build
 
-# Runner stage
+# 2. Runner stage (Final Image)
 FROM node:20-alpine
 WORKDIR /app
-COPY --from=builder /app/backend/user-service/dist ./dist
-COPY --from=builder /app/backend/user-service/package*.json ./
-RUN npm install --production
+
+COPY --from=builder /app/backend/notification-service/dist ./dist
+COPY --from=builder /app/backend/notification-service/package*.json ./
+COPY --from=builder /app/backend/notification-service/node_modules ./node_modules
 
 EXPOSE 3000
 CMD ["node", "dist/main.js"]

@@ -57,6 +57,11 @@ const sequelize = new Sequelize(
     dialect: dbConfig.dialect,
     logging: dbConfig.logging,
     port: dbConfig.port,
+    dialectOptions: {
+      ssl: {
+        rejectUnauthorized: true,
+      },
+    },
   }
 );
 
@@ -68,6 +73,9 @@ export const initDatabase = async () => {
       user: dbConfig.username,
       password: dbConfig.password,
       port: dbConfig.port,
+      ssl: {
+        rejectUnauthorized: true,
+      },
     });
 
     await connection.query(

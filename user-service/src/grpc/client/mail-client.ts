@@ -20,7 +20,8 @@ const packageDefinition = protoLoader.loadSync(PROTO_PATH, {
 
 const notificationProto: any =
   grpc.loadPackageDefinition(packageDefinition).notification;
-const GRPC_HOST = process.env.NOTIFICATION_SERVICE_GRPC_HOST;
+const GRPC_HOST = (process.env.NOTIFICATION_SERVICE_GRPC_HOST || "")
+  .replace(/^https?:\/\//, "");
 console.log("DEBUG: user-service mail-client GRPC_HOST:", GRPC_HOST);
 
 // Initialize the gRPC Client

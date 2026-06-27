@@ -4,10 +4,10 @@ WORKDIR /app
 
 # Sabse pehle root ki dependency copies taaki caching achi rahe
 COPY package*.json ./
-COPY shared ./shared
+# COPY shared ./shared
 
 # Specific service ki dependency copy
-COPY backend/user-service/package*.json ./backend/user-service/
+COPY backend/notification-service/package*.json ./backend/notification-service/
 RUN npm install
 
 # Ab saara code copy karein

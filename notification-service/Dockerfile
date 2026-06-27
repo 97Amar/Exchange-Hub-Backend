@@ -1,7 +1,7 @@
 FROM node:20-alpine AS builder
 WORKDIR /app
 
-COPY ../../shared/ ./shared/
+# COPY ../../shared/ ./shared/
 
 COPY package*.json ./
 
